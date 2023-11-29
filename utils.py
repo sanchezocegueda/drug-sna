@@ -1,7 +1,34 @@
+### Image processing utils ###
+
+def PrintArrayInfo(a):
+    print("Array info:")
+    print("shape", a.shape)
+    print("dtype:", a.dtype)
+    print("min, max", a.min(), a.max())
+
 
 ### Data utils ###
 
-zips = {
+cities = [
+    "Alameda",
+    "Albany",
+    "Berkeley",
+    "Castro Valley",
+    "Dublin",
+    "Emeryville",
+    "Fremont",
+    "Hayward",
+    "Livermore",
+    "Newark",
+    "Oakland",
+    "Pleasanton",
+    "San Leandro",
+    "San Lorenzo",
+    "Sunol",
+    "Union City"
+]
+
+zips_original = {
     94501: "Alameda A/B-2",
     94502: "Alameda B-2",
     94514: "Byron A-1",
@@ -41,23 +68,73 @@ zips = {
     94613: "Mills College B-2", 
     94618: "Oakland B-1b", 
     94619: "Oakland B/C-2", 
-    94621: "Okland B-2f", 
-    94702: "Berkeley A-1a", 
-    94703: "Berkeley A/B-1a", 
-    94704: "Berkeley B-1a", 
-    94705: "Berkeley B-1b", 
-    94706: "Albany A-1", 
-    94707: "Berkeley A/B-1b", 
-    94708: "Berkeley B-1c", 
-    94709: "Berkeley B-1d",
-    94710: "Berkeley A-1b", 
-    94720: "Berkeley A-1c", 
-    95391: "Tracy A-1"
+    94621: "Okland", 
+    94702: "Berkeley", 
+    94703: "Berkeley", 
+    94704: "Berkeley", 
+    94705: "Berkeley", 
+    94706: "Albany", 
+    94707: "Berkeley", 
+    94708: "Berkeley", 
+    94709: "Berkeley",
+    94710: "Berkeley", 
+    94720: "Berkeley", 
+    # 95391: "Tracy"
 }
 
-
-
-
+zips = {
+    94501: "Alameda",
+    94502: "Alameda",
+    94514: "Alameda",
+    94536: "Fremont",
+    94538: "Fremont",
+    94539: "Fremont", 
+    94541: "Hayward",
+    94542: "Hayward",
+    94544: "Hayward",
+    94545: "Hayward",
+    94546: "Castro Valley",
+    94550: "Livermore",
+    94551: "Livermore", 
+    94552: "Castro Valley",
+    94555: "Fremont", 
+    94560: "Newark", 
+    94566: "Pleasanton", 
+    94568: "Dublin", 
+    94577: "San Leandro", 
+    94578: "San Leandro", 
+    94579: "San Leandro", 
+    94580: "San Lorenzo", 
+    94586: "Sunol", 
+    94587: "Union City",
+    94588: "Pleasanton", 
+    94601: "Oakland", 
+    94602: "Oakland", 
+    94603: "Oakland", 
+    94605: "Oakland", 
+    94606: "Oakland", 
+    94607: "Oakland", 
+    94608: "Emeryville", 
+    94609: "Oakland", 
+    94610: "Oakland", 
+    94611: "Oakland", 
+    94612: "Oakland",
+    94613: "Oakland", 
+    94618: "Oakland", 
+    94619: "Oakland", 
+    94621: "Oakland", 
+    94702: "Berkeley", 
+    94703: "Berkeley", 
+    94704: "Berkeley", 
+    94705: "Berkeley", 
+    94706: "Albany", 
+    94707: "Berkeley", 
+    94708: "Berkeley", 
+    94709: "Berkeley",
+    94710: "Berkeley", 
+    94720: "Berkeley", 
+    # 95391: "Tracy"
+}
 
 
 ### Graph utils ###
